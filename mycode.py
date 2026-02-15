@@ -14,9 +14,12 @@ data = {
 df = pd.DataFrame(data)
 
 
+# add new row
+new_row = {'Name': 'Eve', 'Age': 28, 'City': 'San Francisco'}
+df.loc[len(df)] = new_row
 
 # ensure the directory exists
-output_dir = 'Data Files'
+output_dir = 'data'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
