@@ -18,6 +18,9 @@ df = pd.DataFrame(data)
 new_row = {'Name': 'Eve', 'Age': 28, 'City': 'San Francisco'}
 df.loc[len(df)] = new_row
 
+new_row = {'Name': 'Frank', 'Age': 32, 'City': 'Seattle'}
+df.loc[len(df)] = new_row
+
 # ensure the directory exists
 output_dir = 'data'
 if not os.path.exists(output_dir):
